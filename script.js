@@ -1,7 +1,4 @@
-/* eslint-disable consistent-return */
-/* eslint-disable prefer-destructuring */
-/* eslint-disable linebreak-style */
-// /* eslint-disable */
+/* eslint-disable */
 const inputElements = document.querySelectorAll('.card__input');
 const submitButton = document.querySelector('.card__button');
 
@@ -20,7 +17,6 @@ const validateMonth = (month) => {
 const validateYear = (year) => {
   const currentYear = new Date().getFullYear();
   if (year && year > 0 && year <= currentYear) {
-    // return 200_00_000;
     return true;
   }
 };

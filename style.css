@@ -6,6 +6,7 @@
   --color-gray: #8a8a8a;
   --color-black: #151515;
   --color-white: #ffffff;
+  --color-dark-white: #6a6363;
   --color-red: #ff5757ff;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
@@ -20,6 +21,8 @@
 .container {
   font-family: "Poppins", sans-serif;
   display: flex;
+  flex-direction: column;
+  row-gap: 90px;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -143,4 +146,15 @@
 .card__months,
 .card__days {
   font-size: 16px;
+}
+a:hover {
+  text-decoration: underline;
+  font-size: 105%;
+  transition: 0.5s;
+}
+a {
+  color: var(--color-dark-white);
+  font-size: 90%;
+  font-weight: var(--font-weight-regular);
+  text-decoration: none;
 }
