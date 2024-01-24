@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/calculator.svg" />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <form id="age-form" class="card__form">
+          <div class="card__inputContainer">
+            <label for="day" class="card__label">Day</label>
+            <input
+              id="day"
+              name="day"
+              type="number"
+              class="card__input"
+              placeholder="DD"
+              min="0"
+            />
+            <span class="card__errorMessage">must be a valid day</span>
+          </div>
+          <div class="card__inputContainer">
+            <label for="month" class="card__label">Month</label>
+            <input
+              id="month"
+              name="month"
+              type="number"
+              class="card__input"
+              placeholder="MM"
+              min="0"
+            />
+            <span class="card__errorMessage">must be a valid month</span>
+          </div>
+          <div class="card__inputContainer">
+            <label for="year" class="card__label">Year</label>
+            <input
+              id="year"
+              name="year"
+              type="number"
+              class="card__input"
+              placeholder="YYYY"
+              min="0"
+            />
+            <span class="card__errorMessage">must be a valid year</span>
+          </div>
+        </form>
+        <div class="card__separator">
+          <button class="card__button">Calculate</button>
+        </div>
+        <div class="card__result">
+          <span class="card__resultLabel">You are</span>
+          <span class="card__resultValue card__years">--</span>
+          <span class="card__resultLabel">Years old,</span>
+          <br />
+          <div class="card__result-details">
+            <span class="card__resultValue card__months">--</span>
+            <span class="card__resultLabel">Months and</span>
+            <span class="card__resultValue card__days">--</span>
+            <span class="card__resultLabel">days</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

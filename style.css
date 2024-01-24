@@ -1,0 +1,146 @@
+:root {
+  --color-bg: #f0f0f0;
+  --color-purple: #864cff;
+  --color-dark-purple: #4b0cd1;
+  --color-light-gray: #dbdbdbff;
+  --color-gray: #8a8a8a;
+  --color-black: #151515;
+  --color-white: #ffffff;
+  --color-red: #ff5757ff;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 10px;
+  padding: 30px;
+  background: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card__form {
+  display: flex;
+  gap: 15px;
+}
+
+.card__inputContainer {
+  flex: 1;
+}
+
+.card__label {
+  display: block;
+  font-weight: var(--font-weight-bold);
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: var(--color-gray);
+  margin-bottom: 5px;
+}
+
+.card__input {
+  padding: 10px;
+  border: 1px solid var(--color-light-gray);
+  border-radius: 4px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+  outline: none;
+  transition: all 0.3s;
+}
+
+.card__input:focus {
+  border-color: var(--color-purple);
+}
+
+.card__input--error {
+  border-color: var(--color-red);
+}
+
+.card__errorMessage {
+  display: block;
+  font-size: 10px;
+  font-style: italic;
+  color: var(--color-red);
+  margin-top: 5px;
+  font-weight: var(--font-weight-regular);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card__input--error + .card__errorMessage {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card__separator {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.card__separator:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: var(--color-light-gray);
+}
+
+.card__button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background: var(--color-purple);
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.card__button:hover {
+  background: var(--color-dark-purple);
+  box-shadow: 0rem 0rem 0.5rem 0 rgba(126, 78, 214, 1);
+}
+
+.card__result {
+  font-size: 36px;
+  font-weight: var(--font-weight-extra-bold);
+  font-style: italic;
+  text-align: center;
+}
+
+.card__resultValue {
+  font-size: 36px;
+  /*font-weight: var(--font-weight-bold);*/
+  color: var(--color-purple);
+}
+.card__result-details,
+.card__months,
+.card__days {
+  font-size: 16px;
+}
