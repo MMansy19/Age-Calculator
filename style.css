@@ -168,11 +168,6 @@ a:hover {
   font-size: 105%;
   transition: 0.5s;
 }
-.note:hover {
-  text-decoration: underline;
-  font-size: 160%;
-  transition: 0.5s;
-}
 .note {
   font-family: "Amiri Quran", serif;
   color: var(--color-gold);

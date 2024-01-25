@@ -16,7 +16,7 @@ const validateMonth = (month) => {
 
 const validateYear = (year) => {
   const currentYear = new Date().getFullYear();
-  if (year && year > 0 && year <= currentYear) {
+  if (year && year > currentYear - 100 && year <= currentYear) {
     return true;
   }
 };
