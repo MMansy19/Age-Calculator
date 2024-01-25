@@ -192,7 +192,10 @@ a {
     font-size: 24px;
   }
   .card {
+    width: auto;
     padding: 20px; /* Adjust padding for smaller screens */
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
   .card__form {
@@ -212,7 +215,7 @@ a {
   }
 
   .card__result {
-    font-size: 24px; /* Adjust font size for smaller screens */
+    font-size: 20px; /* Adjust font size for smaller screens */
   }
 
   .card__result-details,
