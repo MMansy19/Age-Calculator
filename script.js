@@ -88,6 +88,9 @@ const onClickHandler = () => {
   resultElements[0].textContent = ageArray[0];
   resultElements[1].textContent = ageArray[1];
   resultElements[2].textContent = ageArray[2];
+
+  let note = document.getElementById('note');
+  note.style.display="flex";
 };
 // run the function when the Enter key is clicked
 inputElements.forEach((item) => {

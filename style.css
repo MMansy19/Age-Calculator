@@ -4,6 +4,7 @@
   --color-dark-purple: #4b0cd1;
   --color-light-gray: #dbdbdbff;
   --color-gray: #8a8a8a;
+  --color-gold: #0a0b42;
   --color-black: #151515;
   --color-white: #ffffff;
   --color-dark-white: #6a6363;
@@ -20,9 +21,10 @@
 
 .container {
   font-family: "Poppins", sans-serif;
+
   display: flex;
   flex-direction: column;
-  row-gap: 90px;
+  row-gap: 10px;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -32,6 +34,16 @@
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 100%
   );
+}
+.title {
+  display: flex;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-dark-purple);
+  text-align: center;
+  justify-content: center;
+  column-gap: 10px;
 }
 
 .card {
@@ -46,6 +58,7 @@
 
 .card__form {
   display: flex;
+
   gap: 15px;
 }
 
@@ -126,6 +139,9 @@
   z-index: 1;
 }
 .card__button:hover {
+  transition: 0.8s;
+  font-size: 18px;
+  padding: 12px 25px;
   background: var(--color-dark-purple);
   box-shadow: 0rem 0rem 0.5rem 0 rgba(126, 78, 214, 1);
 }
@@ -152,9 +168,66 @@ a:hover {
   font-size: 105%;
   transition: 0.5s;
 }
+.note:hover {
+  text-decoration: underline;
+  font-size: 160%;
+  transition: 0.5s;
+}
+.note {
+  font-family: "Amiri Quran", serif;
+  color: var(--color-gold);
+  font-size: 150%;
+  margin: 1rem 0;
+  display: none;
+}
+
+.footer {
+  margin: 40px;
+}
 a {
   color: var(--color-dark-white);
   font-size: 90%;
   font-weight: var(--font-weight-regular);
   text-decoration: none;
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 18px;
+  }
+  .card {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .card__form {
+    flex-direction: column; /* Change to column for smaller screens */
+  }
+
+  .card__label {
+    font-size: 10px; /* Adjust font size for smaller screens */
+  }
+
+  .card__input {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .card__button {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .card__result {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .card__result-details,
+  .card__months,
+  .card__days {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  .note {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: none;
+  }
 }
