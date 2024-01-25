@@ -38,7 +38,7 @@
 .title {
   display: flex;
   margin-top: 30px;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: var(--font-weight-bold);
   color: var(--color-dark-purple);
   text-align: center;
@@ -189,7 +189,7 @@ a {
 
 @media (max-width: 400px) {
   .title {
-    font-size: 18px;
+    font-size: 24px;
   }
   .card {
     padding: 20px; /* Adjust padding for smaller screens */
