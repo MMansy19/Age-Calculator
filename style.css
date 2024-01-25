@@ -148,7 +148,7 @@
 }
 
 .card__result {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: var(--font-weight-extra-bold);
   font-style: italic;
   text-align: center;
@@ -156,13 +156,14 @@
 
 .card__resultValue {
   font-size: 36px;
-  /*font-weight: var(--font-weight-bold);*/
   color: var(--color-purple);
 }
-.card__result-details,
+.card__result-details {
+  font-size: 16px;
+}
 .card__months,
 .card__days {
-  font-size: 16px;
+  font-size: 24px;
 }
 a:hover {
   text-decoration: underline;
@@ -217,11 +218,16 @@ a {
   .card__result {
     font-size: 20px; /* Adjust font size for smaller screens */
   }
+  .card__resultValue {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
 
-  .card__result-details,
+  .card__result-details {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
   .card__months,
   .card__days {
-    font-size: 14px; /* Adjust font size for smaller screens */
+    font-size: 16px; /* Adjust font size for smaller screens */
   }
   .note {
     flex-direction: column;
