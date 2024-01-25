@@ -90,7 +90,9 @@ const onClickHandler = () => {
   resultElements[2].textContent = ageArray[2];
 
   let note = document.getElementById('note');
+  let footer = document.getElementById('footer');
   note.style.display="flex";
+  footer.style.margin="0";
 };
 // run the function when the Enter key is clicked
 inputElements.forEach((item) => {

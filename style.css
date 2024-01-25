@@ -42,6 +42,7 @@
   font-weight: var(--font-weight-bold);
   color: var(--color-dark-purple);
   text-align: center;
+  align-items: center;
   justify-content: center;
   column-gap: 10px;
 }
@@ -177,7 +178,7 @@ a:hover {
 }
 
 .footer {
-  margin: 40px;
+  margin: 40px 0;
 }
 a {
   color: var(--color-dark-white);
