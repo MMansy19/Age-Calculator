@@ -4,6 +4,7 @@ This Age Calculator project is a simple web application that allows users to inp
 
 ## Challenge from Frontend Mentor
 [![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-Completed-brightgreen.svg)](https://www.frontendmentor.io/)
+
 This project is a solution to the [Frontend Mentor challenge](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q) for the [Calculator app](https://main--mansy-age-calculator.netlify.app).
 
 ## [Live Site](https://main--mansy-age-calculator.netlify.app)
